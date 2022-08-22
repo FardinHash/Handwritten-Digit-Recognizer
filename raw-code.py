@@ -33,3 +33,7 @@ def digit_model():
 
 	model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 	return model
+
+model= digit_model()
+
+
