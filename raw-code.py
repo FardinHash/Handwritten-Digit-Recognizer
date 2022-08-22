@@ -19,3 +19,8 @@ X_test = X_test.reshape((X_test.shape[0], num_pixels)).astype('float32')
 
 X_train = X_train / 255
 X_test = X_test / 255
+
+y_train = to_categorical(y_train)
+y_test = to_categorical(y_test)
+num_classes = y_test.shape[1]
+
