@@ -32,10 +32,11 @@ def digit_model():
 	model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 	return model
 
+
 model= digit_model()
 
 #fit the model
-fitted= model.fit(X_train, y_train, epochs=10, batch_size=200)
+fitted= model.fit(X_train, y_train, epochs=15, batch_size=200)
 
 #evaluate the model
 scores= model.evaluate(X_test, y_test)
