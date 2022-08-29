@@ -26,6 +26,7 @@ num_classes = y_test.shape[1]
 #model create
 def digit_model():
 	model = Sequential()
+	
 	model.add(Dense(num_pixels, input_shape=(num_pixels,), kernel_initializer='normal', activation='relu'))
 	model.add(Dense(num_classes, kernel_initializer='normal', activation='softmax'))
 
